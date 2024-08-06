@@ -17,13 +17,13 @@ class customer:
             print('Avaliable Balance: ',self.balance)
 
     def myAccount(self):
-        print(input('D-Deposit, W-Withdraw, S-Stop'))
+        print('D-Deposit, W-Withdraw, S-Stop')
         choice = input('Enter your choice: ')
         if choice == 'D':
             amount = int(input('Enter the amount: '))
             customer1.deposit(amount)
 
-            print(input('Do you want to continue'))
+            print('Do you want to continue')
             Option = input('Enter Y-Yes, N-No: ')
             if Option == 'Y':
                 self.myAccount()
@@ -33,7 +33,7 @@ class customer:
             amount = int(input('Enter the amount: '))
             customer1.withdraw(amount)
 
-            print(input('Do you want to continue'))
+            print('Do you want to continue')
             Option = input('Enter Y-Yes, N-No: ')
             if Option == 'Y':
                 self.myAccount()
